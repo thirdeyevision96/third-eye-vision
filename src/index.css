@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --color-charcoal: #0b0f0e;
+  --color-ivory: #f4f0e7;
+  --color-gold: #c9a15a;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-charcoal);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-charcoal);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(201, 161, 90, 0.35);
+  color: #faf8f2;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .luxury-border {
+    border-color: rgba(244, 240, 231, 0.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer utilities {
+  .font-editorial { font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif; }
+  .font-script { font-family: 'Allura', 'Cormorant Garamond', cursive; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .scrollbar-none { scrollbar-width: none; }
+}
+
+
+@layer components {
+  .contact-input {
+    height: 2.75rem;
+    width: 100%;
+    border: 1px solid rgba(244, 240, 231, 0.15);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    padding: 0 1rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: var(--color-ivory);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition: all 300ms;
+  }
+
+  .contact-input::placeholder {
+    color: rgba(244, 240, 231, 0.4);
+  }
+
+  .contact-input:focus {
+    border-color: rgba(201, 161, 90, 0.7);
+    box-shadow: 0 0 0 1px rgba(201, 161, 90, 0.2);
+  }
+
+  .contact-input option {
+    background-color: var(--color-charcoal);
+    color: var(--color-ivory);
+  }
+}
