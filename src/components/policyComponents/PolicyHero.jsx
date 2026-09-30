@@ -17,12 +17,11 @@ export default function DeliverablesHero() {
         />
 
         {/* Keep image visible */}
-        <div className="absolute inset-0 bg-black/20" />
+       <div className="absolute inset-0 bg-black/35" />
 
-        {/* Content readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/95 via-charcoal-950/45 to-transparent" />
 
-        <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-charcoal-950 via-charcoal-950/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-charcoal-950/20" />
       </div>
 
 
@@ -59,7 +58,7 @@ export default function DeliverablesHero() {
             &amp;{' '}
             </span>
             <span className="text-ivory">
-              timelines.
+              Timelines.
             </span>
             <br />
             <span className="font-script text-gold-300">

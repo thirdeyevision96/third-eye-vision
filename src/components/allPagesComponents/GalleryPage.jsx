@@ -1,6 +1,10 @@
 import Navbar from '../commonComponents/Navbar'
 import Footer from '../commonComponents/Footer'
-import ComingSoonPage from '../commonComponents/ComingSoonPage'
+// import ComingSoonPage from '../commonComponents/ComingSoonPage'
+import GalleryHero from '../galleryComponents/GalleryHero'
+import GalleryGrid from '../galleryComponents/GalleryGrid'
+import GalleryBottom from '../galleryComponents/GalleryBottom'
+import CloudinaryTest from '../galleryComponents/CloudinaryTest'
 
 export default function GalleryPage() {
   return (
@@ -8,7 +12,11 @@ export default function GalleryPage() {
       <Navbar />
 
       <main>
-        <ComingSoonPage />
+        {/* <CloudinaryTest /> */}
+        <GalleryHero />
+        <GalleryGrid />
+        <GalleryBottom />
+        {/* <ComingSoonPage /> */}
       </main>
 
       <Footer />

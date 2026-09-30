@@ -104,7 +104,7 @@ export default function Highlights() {
             </p>
 
             <Button
-              href="#services"
+              href="/services"
               variant="outline"
               icon
               className="mt-7 border-charcoal-900/20 bg-transparent !text-charcoal-700/75 hover:border-gold-500 hover:bg-gold-400/10 hover:text-gold-600"

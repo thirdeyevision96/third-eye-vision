@@ -99,3 +99,13 @@ a {
     color: var(--color-ivory);
   }
 }
+
+/* Hide scrollbar while keeping horizontal scrolling */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

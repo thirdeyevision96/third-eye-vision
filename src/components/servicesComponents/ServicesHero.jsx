@@ -16,11 +16,11 @@ export default function ServicesHero() {
         />
 
         {/* Cinematic overlays */}
-        <div className="absolute inset-0 bg-black/15" />
+        <div className="absolute inset-0 bg-black/35" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/15 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/95 via-charcoal-950/45 to-transparent" />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-charcoal-950/20" />
       </div>
 
       <Container className="relative z-10 flex min-h-[78vh] items-end pb-16 pt-32 sm:pb-20 lg:pb-24">

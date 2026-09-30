@@ -18,11 +18,11 @@ export default function ContactHero() {
         />
 
         {/* Dark overlays */}
-        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-black/35" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/95 via-charcoal-950/45 to-transparent" />
 
-        <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-charcoal-950 via-charcoal-950/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-charcoal-950/20" />
       </div>
 
       <Container className="relative z-10 flex min-h-[70vh] items-center pt-24 sm:min-h-[72vh] lg:min-h-[74vh]">

@@ -221,7 +221,7 @@ export default function TimelineExtra() {
           </p>
 
           <h2 className="mt-4 font-display text-4xl leading-none text-charcoal-900 sm:text-5xl lg:text-6xl">
-            Beyond Delivery
+            Beyond Promised Delivery
           </h2>
 
           <div className="mx-auto mt-6 h-px w-12 bg-gold-500" />

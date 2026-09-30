@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import Container from '../commonComponents/Container'
 
-import AboutImage from '../../assets/home-hero.png'
+import AboutImage from '../../assets/tev-about.jpeg'
 
 export default function AboutHero() {
   const reduceMotion = useReducedMotion()

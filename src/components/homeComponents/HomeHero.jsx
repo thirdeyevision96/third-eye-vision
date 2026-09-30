@@ -31,10 +31,12 @@ export default function Hero() {
         transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
       />
 
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-charcoal-950/95 via-charcoal-950/55 to-charcoal-950/15" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-charcoal-950/85 via-transparent to-charcoal-950/25" />
-      <div className="absolute inset-0 -z-10 bg-black/15" />
+      <div className="absolute inset-0 bg-black/35" />
 
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/95 via-charcoal-950/45 to-transparent" />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-charcoal-950/20" />
+      
       <Container className="relative flex min-h-[100svh] items-center pb-28 pt-32 sm:pb-32 sm:pt-36">
         <div className="w-full max-w-[720px]">
           <motion.p
@@ -68,7 +70,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.div {...reveal(0.62)} className="mt-7 sm:mt-8">
-            <Button href="#packages" icon={false} className="group px-5 py-3 text-[9px] sm:px-6">
+            <Button href="/contact" icon={false} className="group px-5 py-3 text-[9px] sm:px-6">
             <span className='flex items-center sm:gap-2'>
               Book Now
               <ArrowUpRight size={13} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

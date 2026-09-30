@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { CalendarDays, Gift, Sparkles, ArrowRight } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 
 const benefits = [
   {
@@ -125,13 +126,13 @@ export default function OfferZone() {
           </motion.div>
 
           <motion.div variants={fadeUp} transition={{ duration: 0.6 }} className="relative z-10 mt-8">
-            <a
-              href="#packages"
+            <NavLink
+              to="/services"
               className="group inline-flex items-center gap-3 border-b border-charcoal-950/30 pb-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-charcoal-950 transition-colors hover:border-gold-600 hover:text-gold-700"
             >
               <span>Check Our Packages</span>
               <ArrowRight size={15} strokeWidth={1.5} className="transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
+            </NavLink>
           </motion.div>
 
           <div className="pointer-events-none absolute bottom-8 right-7 hidden select-none font-editorial text-[120px] leading-none text-charcoal-950/[0.025] sm:block lg:right-14 lg:text-[180px]">
