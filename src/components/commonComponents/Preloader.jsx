@@ -70,7 +70,7 @@ export default function Preloader({ onComplete }) {
       className="
         fixed
         inset-0
-        z-[9999]
+        z-[99999999]
         flex
         items-center
         justify-center
